@@ -93,7 +93,7 @@ void Key_CallBack(GLFWwindow* window, //pointer to the window
     int action, //either press / release
     int mods) {// which modifier keys is held down
 
-    float movementSpeed = 60.f * deltaTime;
+    float movementSpeed = 70.f * deltaTime;
     float objectTurnSpeed = 3.f;
 
     float directionX = cos(glm::radians(theta_y_mod));
@@ -214,7 +214,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Graphfinalprojecct", NULL, NULL);
+    window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "GRAP1 MP: BUMANGLAG, DOMINGO", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -297,7 +297,7 @@ int main(void)
     firstModel->spawn();
     auto secondModel = new Model3D(glm::vec3(25.f, -20.f, 10.f), "3D/Cruiser2.png", "3D/Cruiser2.obj", glm::vec3(1.0f, 1.0f, 1.0f), 1);
     secondModel->spawn();
-    auto thirdtModel = new Model3D(glm::vec3(25.f, -15.f, 0.f), "3D/cruiser1.png", "3D/Cruiser1.obj", glm::vec3(0.5f, 0.5f, 0.5f), 1);
+    auto thirdtModel = new Model3D(glm::vec3(30.f, -15.f, 0.f), "3D/cruiser1.png", "3D/Cruiser1.obj", glm::vec3(0.5f, 0.5f, 0.5f), 1);
     thirdtModel->spawn();
     auto fourthModel = new Model3D(glm::vec3(35.f, -10.f,-19.f), "3D/Transport_Text.png", "3D/Transport.obj", glm::vec3(0.5f, 0.5f, 0.5f), 1);
     fourthModel->spawn();

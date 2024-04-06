@@ -73,7 +73,7 @@ public:
 				glm::radians(60.f),//FOV
 				window_width / window_height, //aspect ratio
 				0.1f, //znear > 0
-				500.f //zfar
+				100.f //zfar
 			);
 		}
 		if (type == 1) {
@@ -81,7 +81,7 @@ public:
 				glm::radians(60.f),//FOV
 				window_width / window_height, //aspect ratio
 				0.1f, //znear > 0
-				100.f //zfar
+				40.f //zfar
 			);
 		}
 	}
